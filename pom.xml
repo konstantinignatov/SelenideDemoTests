@@ -16,6 +16,9 @@
       <junit-platform-launcher.version>1.7.0-M1</junit-platform-launcher.version>
       <junit-jupiter-engine.version>5.7.0-M1</junit-jupiter-engine.version>
       <junit-vintage-engine.version>5.7.0-M1</junit-vintage-engine.version>
+      <hamcrest-core.version>2.2</hamcrest-core.version>
+      <commons-io.version>2.7</commons-io.version>
+      <slf4j-nop.version>1.7.30</slf4j-nop.version>
       <extentreports.version>4.1.7</extentreports.version>
   </properties>
     <build>
@@ -82,7 +85,7 @@
     <dependency>
           <groupId>org.hamcrest</groupId>
           <artifactId>hamcrest-core</artifactId>
-          <version>2.2</version>
+          <version>${hamcrest-core.version}</version>
           <scope>compile</scope>
     </dependency>
     <dependency>
@@ -94,12 +97,12 @@
       <dependency>
           <groupId>commons-io</groupId>
           <artifactId>commons-io</artifactId>
-          <version>2.7</version>
+          <version>${commons-io.version}</version>
       </dependency>
     <dependency>
           <groupId>org.slf4j</groupId>
           <artifactId>slf4j-nop</artifactId>
-          <version>1.7.30</version>
+          <version>${slf4j-nop.version}</version>
           <scope>test</scope>
     </dependency>
   </dependencies>
